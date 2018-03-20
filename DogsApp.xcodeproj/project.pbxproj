@@ -30,6 +30,8 @@
 		0AC30D761FE093F90031DF09 /* FavoriteDogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AC30D741FE093F90031DF09 /* FavoriteDogTableViewCell.xib */; };
 		6267CC5E60F17CDD3525F5F4 /* Pods_DogsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FD0F204A6953024A7838C4 /* Pods_DogsAppTests.framework */; };
 		98B7C8B4ED31B177BF59BE76 /* Pods_DogsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D90D1BEB606B7939D6206B /* Pods_DogsApp.framework */; };
+		CD2FF126206049AB00A8D2DF /* FavoritesDatasourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2FF125206049AB00A8D2DF /* FavoritesDatasourceSpec.swift */; };
+		CD2FF12B206062DA00A8D2DF /* FavoritesDatasourceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2FF12A206062DA00A8D2DF /* FavoritesDatasourceStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		882A2996A6FA0D24E4C152AF /* Pods-DogsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogsAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DogsAppTests/Pods-DogsAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CB842438FADA5B13A2E7FACD /* Pods-DogsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogsAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogsAppTests/Pods-DogsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC65121F08BB35684B8B19EF /* Pods-DogsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogsApp/Pods-DogsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CD2FF125206049AB00A8D2DF /* FavoritesDatasourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDatasourceSpec.swift; sourceTree = "<group>"; };
+		CD2FF12A206062DA00A8D2DF /* FavoritesDatasourceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDatasourceStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 		0AAD7DB11FE02B160048E7A2 /* DogsAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				CD2FF1272060508300A8D2DF /* Cells */,
+				CD2FF1242060497F00A8D2DF /* Datasources */,
 				0AAD7DB21FE02B160048E7A2 /* DogsAppTests.swift */,
 				0AAD7DB41FE02B160048E7A2 /* Info.plist */,
 			);
@@ -210,6 +216,22 @@
 				882A2996A6FA0D24E4C152AF /* Pods-DogsAppTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD2FF1242060497F00A8D2DF /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				CD2FF125206049AB00A8D2DF /* FavoritesDatasourceSpec.swift */,
+				CD2FF12A206062DA00A8D2DF /* FavoritesDatasourceStub.swift */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		CD2FF1272060508300A8D2DF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		EE8ACA5A8A0433E6DB5CDFFC /* Frameworks */ = {
@@ -473,7 +495,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2FF12B206062DA00A8D2DF /* FavoritesDatasourceStub.swift in Sources */,
 				0AAD7DB31FE02B160048E7A2 /* DogsAppTests.swift in Sources */,
+				CD2FF126206049AB00A8D2DF /* FavoritesDatasourceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
