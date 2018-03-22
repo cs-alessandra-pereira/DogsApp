@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class FavoritesDatasource: NSObject, UITableViewDataSource {
+class FavoritesDatasource: NSObject, UITableViewDataSource {
     let dogs: [Dog]
     
     init(tableView: UITableView, dogs: [Dog]) {

@@ -6,4 +6,15 @@
 //  Copyright © 2018 Thiago Lioy. All rights reserved.
 //
 
-import Foundation
+@testable import DogsApp
+import UIKit
+
+class FavoritesDatasourceStub: FavoritesDatasource {
+    
+    var isRegisterCalled = false
+    
+    override func register(in tableView: UITableView){
+        isRegisterCalled = true
+    }
+    
+}

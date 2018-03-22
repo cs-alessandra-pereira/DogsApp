@@ -32,6 +32,9 @@
 		98B7C8B4ED31B177BF59BE76 /* Pods_DogsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D90D1BEB606B7939D6206B /* Pods_DogsApp.framework */; };
 		CD2FF126206049AB00A8D2DF /* FavoritesDatasourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2FF125206049AB00A8D2DF /* FavoritesDatasourceSpec.swift */; };
 		CD2FF12B206062DA00A8D2DF /* FavoritesDatasourceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2FF12A206062DA00A8D2DF /* FavoritesDatasourceStub.swift */; };
+		CD5BBA1D20619671004A6EAB /* BreedsViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5BBA1C20619671004A6EAB /* BreedsViewControllerSpec.swift */; };
+		CD5BBA1F20619826004A6EAB /* BreedsViewControllerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5BBA1E20619826004A6EAB /* BreedsViewControllerStub.swift */; };
+		CDD415B52063ED5300988317 /* FavoriteDatasourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD415B42063ED5300988317 /* FavoriteDatasourceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		CC65121F08BB35684B8B19EF /* Pods-DogsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogsApp/Pods-DogsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CD2FF125206049AB00A8D2DF /* FavoritesDatasourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDatasourceSpec.swift; sourceTree = "<group>"; };
 		CD2FF12A206062DA00A8D2DF /* FavoritesDatasourceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDatasourceStub.swift; sourceTree = "<group>"; };
+		CD5BBA1C20619671004A6EAB /* BreedsViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewControllerSpec.swift; sourceTree = "<group>"; };
+		CD5BBA1E20619826004A6EAB /* BreedsViewControllerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewControllerStub.swift; sourceTree = "<group>"; };
+		CDD415B42063ED5300988317 /* FavoriteDatasourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDatasourceTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,7 @@
 		0AAD7DB11FE02B160048E7A2 /* DogsAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				CD5BBA1B2061965B004A6EAB /* Controllers */,
 				CD2FF1272060508300A8D2DF /* Cells */,
 				CD2FF1242060497F00A8D2DF /* Datasources */,
 				0AAD7DB21FE02B160048E7A2 /* DogsAppTests.swift */,
@@ -221,6 +228,7 @@
 		CD2FF1242060497F00A8D2DF /* Datasources */ = {
 			isa = PBXGroup;
 			children = (
+				CDD415B42063ED5300988317 /* FavoriteDatasourceTest.swift */,
 				CD2FF125206049AB00A8D2DF /* FavoritesDatasourceSpec.swift */,
 				CD2FF12A206062DA00A8D2DF /* FavoritesDatasourceStub.swift */,
 			);
@@ -232,6 +240,15 @@
 			children = (
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		CD5BBA1B2061965B004A6EAB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD5BBA1C20619671004A6EAB /* BreedsViewControllerSpec.swift */,
+				CD5BBA1E20619826004A6EAB /* BreedsViewControllerStub.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		EE8ACA5A8A0433E6DB5CDFFC /* Frameworks */ = {
@@ -495,7 +512,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5BBA1F20619826004A6EAB /* BreedsViewControllerStub.swift in Sources */,
 				CD2FF12B206062DA00A8D2DF /* FavoritesDatasourceStub.swift in Sources */,
+				CDD415B52063ED5300988317 /* FavoriteDatasourceTest.swift in Sources */,
+				CD5BBA1D20619671004A6EAB /* BreedsViewControllerSpec.swift in Sources */,
 				0AAD7DB31FE02B160048E7A2 /* DogsAppTests.swift in Sources */,
 				CD2FF126206049AB00A8D2DF /* FavoritesDatasourceSpec.swift in Sources */,
 			);

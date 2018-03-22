@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class BreedsViewController: UIViewController {
+class BreedsViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
